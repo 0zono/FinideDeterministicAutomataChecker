@@ -5,9 +5,9 @@ import java.io.FileNotFoundException;
 
 public class App {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner scanner = new Scanner(new File("src/teste1.txt"));
-
-        int qtdEstados = scanner.nextInt(); //n vai ser usado porque a quantidade de estados fica implicita em transicoes eu acho
+        Scanner scanner = new Scanner(new File("caminhodoarquivo"));
+        @SuppressWarnings("unused")
+        int qtdEstados = scanner.nextInt(); //n vai ser usado porque a quantidade de estados fica implicita em transicoes, provavelmente       
         int estadoIni = scanner.nextInt();
         int qtdEstadosEnd = scanner.nextInt(); //escrevi estadosEnd pq eu q n vou arriscar usar a palavra final
         Set<Integer> estadosEnd = new HashSet<>();
